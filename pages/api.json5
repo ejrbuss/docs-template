@@ -1,0 +1,5 @@
+{
+    layout: '../layouts/API',
+    title: 'MyApp | API',
+    github: 'https://github.com/ejrbuss/docs-template',
+}
