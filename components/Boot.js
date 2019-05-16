@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Vars from '../Vars';
 
 // Load Less styles
 import './Boot.less';
@@ -18,7 +19,7 @@ export default ({
         <meta name='author'      content={author} />
         <meta name='viewport'    content='width=device-width, initial-scale=1.0' />
         {/* Favicon */}
-        <link rel='shortcut icon' href={favicon} />
+        <link rel='shortcut icon' href={Vars.sitePrefix + favicon} />
         {/* Static CSS */}
         <link rel='stylesheet' href='/static/css/github.css' />
         <link rel='stylesheet' href='/static/css/spectre.min.css' />
