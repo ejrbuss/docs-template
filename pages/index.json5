@@ -3,5 +3,4 @@
     title: 'MyApp',
     subtitle: 'an app you can use for *things*',
     version: 'v1.0.0',
-    github: 'https://github.com/ejrbuss/docs-template',
 }

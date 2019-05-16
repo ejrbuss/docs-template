@@ -9,6 +9,7 @@ import Places          from '../components/Places';
 
 // Libraries
 import Pages from '../lib/Pages';
+import Vars  from '../Vars';
 import { useSearch } from '../lib/hooks';
 
 export default ({ pageName }) => {
@@ -23,7 +24,7 @@ export default ({ pageName }) => {
                     showScrollMarker
                     showSearch
                     leftLinks={<Places api />}
-                    rightLinks={<a href={page.github} className='p-md subtle-accent'>
+                    rightLinks={<a href={Vars.github} className='p-md subtle-accent'>
                         <i className='fab fa-github fa-lg' />
                     </a>}
                 />

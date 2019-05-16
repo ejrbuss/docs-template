@@ -1,7 +1,8 @@
 const withLess = require('@zeit/next-less')
+const Vars     = require('./Vars');
 
 module.exports = withLess({
-    assetPrefix: process.env.NODE_ENV === 'production' ? '/docs-template' : '',
+    assetPrefix: Vars.sitePrefix,
     webpackDevMiddleware(config) {
         config.watchOptions = {
             ignored: [

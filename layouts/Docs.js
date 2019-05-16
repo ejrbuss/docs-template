@@ -11,6 +11,7 @@ import Logo            from '../components/Logo';
 
 // Libraries
 import Pages from '../lib/Pages';
+import Vars  from '../Vars';
 import { useSearch } from '../lib/hooks';
 
 export default ({ pageName }) => {
@@ -25,7 +26,7 @@ export default ({ pageName }) => {
                     showScrollMarker
                     showSearch
                     leftLinks={<Places home />}
-                    rightLinks={<a href={page.github} className='p-md subtle-accent'>
+                    rightLinks={<a href={Vars.github} className='p-md subtle-accent'>
                         <i className='fab fa-github fa-lg' />
                     </a>}
                 />
@@ -34,9 +35,9 @@ export default ({ pageName }) => {
                 <div className='content container grid-md docs'>
                     <Logo />
                     <p className='text-center subtext p-md'>{page.version}</p>
-                    <p className='text-center clr-accent subtitle'>
+                    <div className='text-center clr-accent subtitle'>
                         <EjrbussMarkdown source={page.subtitle} />
-                    </p>
+                    </div>
                     <EjrbussMarkdown source={page.content} />
                 </div>
             </div>

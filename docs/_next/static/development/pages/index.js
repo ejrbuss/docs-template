@@ -1,5 +1,19 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
+/***/ "./Vars.js":
+/*!*****************!*\
+  !*** ./Vars.js ***!
+  \*****************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = {
+  sitePrefix:  false ? undefined : '',
+  github: 'https://github.com/ejrbuss/docs-template'
+};
+
+/***/ }),
+
 /***/ "./components/Boot.js":
 /*!****************************!*\
   !*** ./components/Boot.js ***!
@@ -969,73 +983,76 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Vars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Vars */ "./Vars.js");
+/* harmony import */ var _Vars__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Vars__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/ejrbuss/GitHub/docs-template/components/Places.js";
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var home = _ref.home,
       api = _ref.api;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/index",
+    href: _Vars__WEBPACK_IMPORTED_MODULE_2___default.a.sitePrefix + '/index',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "m-md ".concat(home ? 'active' : ''),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fas fa-home",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }), "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/api",
+    href: _Vars__WEBPACK_IMPORTED_MODULE_2___default.a.sitePrefix + '/api',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "m-md ".concat(api ? 'active' : ''),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fas fa-book",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     },
     __self: this
   }), "API")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/download",
+    href: _Vars__WEBPACK_IMPORTED_MODULE_2___default.a.sitePrefix + '/download',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "m-md",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fas fa-cloud-download-alt",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }), "Download")));
@@ -1386,7 +1403,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Places__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Places */ "./components/Places.js");
 /* harmony import */ var _components_Logo__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Logo */ "./components/Logo.js");
 /* harmony import */ var _lib_Pages__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../lib/Pages */ "./lib/Pages.js");
-/* harmony import */ var _lib_hooks__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../lib/hooks */ "./lib/hooks.js");
+/* harmony import */ var _Vars__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../Vars */ "./Vars.js");
+/* harmony import */ var _Vars__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_Vars__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _lib_hooks__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../lib/hooks */ "./lib/hooks.js");
 var _jsxFileName = "/Users/ejrbuss/GitHub/docs-template/layouts/Docs.js";
 
 
@@ -1404,21 +1423,22 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
+
 /* harmony default export */ __webpack_exports__["default"] = (function (_ref) {
   var pageName = _ref.pageName;
   var page = _lib_Pages__WEBPACK_IMPORTED_MODULE_9__["default"][pageName];
-  var searchCtx = Object(_lib_hooks__WEBPACK_IMPORTED_MODULE_10__["useSearch"])();
+  var searchCtx = Object(_lib_hooks__WEBPACK_IMPORTED_MODULE_11__["useSearch"])();
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     id: "page",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Boot__WEBPACK_IMPORTED_MODULE_1__["default"], _extends({}, page, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 23
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -1429,89 +1449,89 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
       home: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 28
       },
       __self: this
     }),
     rightLinks: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-      href: page.github,
+      href: _Vars__WEBPACK_IMPORTED_MODULE_10___default.a.github,
       className: "p-md subtle-accent",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 29
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
       className: "fab fa-github fa-lg",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 30
       },
       __self: this
     })),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideNav__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SearchResults__WEBPACK_IMPORTED_MODULE_5__["default"], {
     searchCtx: searchCtx,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "content container grid-md docs",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-center subtext p-md",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
-  }, page.version), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, page.version), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "text-center clr-accent subtitle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_EjrbussMarkdown__WEBPACK_IMPORTED_MODULE_6__["default"], {
     source: page.subtitle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_EjrbussMarkdown__WEBPACK_IMPORTED_MODULE_6__["default"], {
     source: page.content,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }));
@@ -1774,6 +1794,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _lib_Pages__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../lib/Pages */ "./lib/Pages.js");
+/* harmony import */ var _Vars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Vars */ "./Vars.js");
+/* harmony import */ var _Vars__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Vars__WEBPACK_IMPORTED_MODULE_2__);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -1781,6 +1803,7 @@ function _nonIterableRest() { throw new TypeError("Invalid attempt to destructur
 function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -1845,7 +1868,7 @@ var useSearch = function useSearch() {
         setResults(pages.map(function (page) {
           return {
             title: page.title,
-            href: page.route,
+            href: _Vars__WEBPACK_IMPORTED_MODULE_2___default.a.sitePrefix + page.route,
             previews: page.$previews(search)
           };
         }));
@@ -1859,10 +1882,6 @@ var useSearch = function useSearch() {
       setResults([]);
     }
   };
-};
-
-var getHeaderId = function getHeaderId(text) {
-  return text.replace(/\s/g, '').toLowerCase();
 };
 
 var getYOffset = function getYOffset(e) {
