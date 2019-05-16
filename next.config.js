@@ -1,7 +1,7 @@
 const withLess = require('@zeit/next-less')
 
 module.exports = withLess({
-    // assetPrefix: process.env.NODE_ENV === 'production' ? '/docs-template/docs/' : '',
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/docs-template/' : '',
     webpackDevMiddleware(config) {
         config.watchOptions = {
             ignored: [
