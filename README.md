@@ -19,6 +19,7 @@ When creating a new docs sits be sure to do all of the following steps:
 8. Update `components/Places.js`
 9. Replace `static/favicon.ico`
 10. Test, build, and export
+11. Add `.nojekyll`
 
 ## Testing
 

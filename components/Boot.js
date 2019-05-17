@@ -10,7 +10,7 @@ export default ({
     description = '', 
     author      = 'Eric Buss',
     favicon     = '/static/favicon.ico',
-}) =>
+}) => (
     <Head>
         <title>{title}</title>
         <meta charSet='UTF-8' />
@@ -26,4 +26,9 @@ export default ({
         <link rel='stylesheet' href='/static/css/spectre-exp.min.css' />
         <link rel='stylesheet' href='/static/css/font-awesome.min.css' />
         <link rel='stylesheet' href='/static/css/animate.css' />
-    </Head>;
+        {/* Shimmy */}
+        <script src='/static/js/es5-shim.min.js' />
+        <script src='/static/js/es6-shim.min.js' />
+        <script src='/static/js/object-shim.js' />
+    </Head>
+);
